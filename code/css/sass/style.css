@@ -1,0 +1,295 @@
+/**************************** Global ********************************/
+/* line 4, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+html {
+  min-height: 100%; }
+
+/* line 8, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+body {
+  /* This image will be displayed fullscreen */
+  background: black;
+  /*background-size:cover; */
+  /* Workaround for some mobile browsers */
+  min-height: 100%;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  color: white; }
+
+/* line 21, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+a {
+  text-decoration: none;
+  color: white; }
+
+/* line 22, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+a:hover {
+  cursor: pointer;
+  text-decoration: none; }
+
+/**************************** Global ********************************/
+/******** Page ************/
+/* line 31, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+.wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  -webkit-transform-style: preserve-3d; }
+
+/******* pagination ********/
+/* line 43, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+.pagination {
+  position: absolute;
+  right: 10px;
+  top: 25%;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 52, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+.pagination li {
+  padding: 5px;
+  width: 16px;
+  height: 16px; }
+
+/* line 57, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+.pagination li a {
+  margin: 0 auto;
+  width: 10px;
+  height: 10px;
+  display: block;
+  background: #fafafa;
+  border-radius: 0px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  box-shadow: 0 0 4px white; }
+
+/* line 76, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+.pagination li a:hover, .pagination li a.active {
+  margin: 0 auto;
+  width: 10px;
+  height: 10px;
+  display: block;
+  background: none;
+  border-radius: 10px;
+  border: 1px solid white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-transition: all 0.5s ease; }
+
+/***************HEADER********************/
+/* Stuff I added */
+/* line 93, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+.menu-outer:hover ~ .menu-close {
+  margin-right: -100px; }
+
+/* line 96, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+.menu-outer:hover .bar {
+  background: rgba(100, 200, 240, 0.9); }
+
+/* line 97, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+.menu-outer > nav ul {
+  top: 15%; }
+
+/* The rest I chnaged parts but not most of it */
+/* line 101, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+html, body {
+  background: #141414; }
+
+/* line 105, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+.menu-outer {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  font-family: 'Montserrat', serif;
+  z-index: 998;
+  width: 100%;
+  left: 100%;
+  margin-left: -100px;
+  height: 200%;
+  background: rgba(100, 200, 240, 0.9);
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -o-transform-origin: top left;
+  transform-origin: top left;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+/* line 132, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+.menu-outer:hover {
+  background: rgba(100, 200, 240, 0.98);
+  left: 0;
+  margin-left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg); }
+
+/* line 142, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+.menu-icon {
+  z-index: 999;
+  position: absolute;
+  top: 58px;
+  left: 15px;
+  width: 30px;
+  pointer-events: none;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s; }
+
+/* line 160, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+.menu-icon .bar {
+  background: #fafafa;
+  width: 100%;
+  height: 5px;
+  margin: 0 0 5px;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s; }
+
+/* line 171, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+.menu-outer:hover > .menu-icon {
+  opacity: 0; }
+
+/* line 174, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+nav ul {
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  left: 10%;
+  /*prevents possible click when not oppened*/
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s; }
+
+/* line 185, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+.menu-outer:hover > nav ul {
+  left: 0; }
+
+/* line 188, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+nav li {
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase; }
+
+/* line 193, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+nav li a {
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 20px;
+  display: block;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s; }
+
+/* line 206, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+nav li a:hover {
+  color: white; }
+
+@media screen and (max-width: 600px), screen and (max-height: 600px) {
+  /* line 210, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+  nav ul {
+    font-size: 0.75em; }
+
+  /* line 211, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+  nav ul a {
+    padding: 10px; }
+ }
+
+/* line 213, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+.menu-close {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  right: 100%;
+  width: 200px;
+  height: 200px;
+  background: #fa8246;
+  cursor: pointer;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -ms-transform-origin: top right;
+  -o-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+/* line 238, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+.menu-close .menu-icon {
+  right: 15px;
+  left: auto;
+  top: 68px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+/* line 246, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+.menu-close .bar {
+  background: #fafafa;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -ms-transform-origin: center;
+  -o-transform-origin: center;
+  transform-origin: center; }
+
+/* line 257, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+.menu-close .bar:first-child {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+/* line 264, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+.menu-close .bar:last-child {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+/*# sourceMappingURL=style.css.map */
