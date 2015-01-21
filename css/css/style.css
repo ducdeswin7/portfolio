@@ -1,57 +1,409 @@
-/*
-Error: File to import not found or unreadable: compass/css3.
-       Load path: C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass
-        on line 1 of sass/style.scss
+/**************************** Global ********************************/
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Dosis:200,600);
+html {
+  min-height: 100%; }
 
-1: @import "compass/css3";
-2: 
-3: /**************************** Global ********************************\/
-4: html{ 
-5:     min-height:100%;
-6: }
+body {
+  /* This image will be displayed fullscreen */
+  background: black;
+  /*background-size:cover; */
+  /* Workaround for some mobile browsers */
+  min-height: 100%;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  color: white; }
 
-Backtrace:
-sass/style.scss:1
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/import_node.rb:66:in `rescue in import'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/import_node.rb:45:in `import'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:328:in `block in watch'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `call'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: compass/css3.\A        Load path: C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass\A         on line 1 of sass/style.scss\A \A 1: @import \"compass/css3\";\A 2: \A 3: /**************************** Global ********************************/\A 4: html{ \A 5:     min-height:100%;\A 6: }"; }
+a {
+  text-decoration: none;
+  color: white; }
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none; }
+
+/**************************** Global ********************************/
+/******** Page ************/
+.wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  -webkit-transform-style: preserve-3d; }
+
+/******* pagination ********/
+.pagination {
+  position: absolute;
+  right: 10px;
+  top: 25%;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.pagination li {
+  padding: 5px;
+  width: 16px;
+  height: 16px; }
+
+.pagination li a {
+  margin: 0 auto;
+  width: 10px;
+  height: 10px;
+  display: block;
+  background: #fafafa;
+  /*border-radius: 0px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;*/
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  box-shadow: 0 0 4px white; }
+
+.pagination li a:hover, .pagination li a.active {
+  margin: 0 auto;
+  width: 10px;
+  height: 10px;
+  display: block;
+  background: none;
+  border-radius: 10px;
+  border: 1px solid white; }
+
+/***************HEADER********************/
+/* Stuff I added */
+.menu-outer:hover ~ .menu-close {
+  margin-right: -100px; }
+
+.menu-outer:hover .bar {
+  background: rgba(0, 0, 0, 0.9); }
+
+.menu-outer > nav ul {
+  top: 15%; }
+
+/* The rest I chnaged parts but not most of it */
+.menu-outer {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  font-family: 'Montserrat', serif;
+  z-index: 998;
+  width: 100%;
+  left: 100%;
+  margin-left: -100px;
+  height: 200%;
+  background: rgba(21, 21, 21, 0.9);
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  -ms-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s;
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -o-transform-origin: top left;
+  transform-origin: top left;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.menu-outer:hover {
+  background: rgba(20, 21, 21, 0.98);
+  left: 0;
+  margin-left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg); }
+
+.menu-icon {
+  z-index: 999;
+  position: absolute;
+  top: 58px;
+  left: 15px;
+  width: 30px;
+  pointer-events: none;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  -ms-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s; }
+
+.menu-icon .bar {
+  background: #fafafa;
+  width: 100%;
+  height: 5px;
+  margin: 0 0 5px;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  -ms-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s; }
+
+.menu-outer:hover > .menu-icon {
+  opacity: 0; }
+
+header {
+  margin: 170px auto;
+  width: 1140px;
+  height: 470px; }
+
+.logoBar {
+  width: 100%;
+  height: 80px; }
+
+.logo {
+  height: 100%;
+  background: url(../../img/sprite.png) no-repeat 0px -329px;
+  float: left; }
+
+ul.social {
+  height: 100%; }
+
+ul.social li {
+  display: inline-block;
+  width: 24%;
+  height: 100%; }
+
+.facebook {
+  background: url(../../img/sprite.png) no-repeat -229px -240px;
+  content: ' ';
+  width: 67%;
+  height: 100%;
+  float: right; }
+
+.twitter {
+  background: url(../../img/sprite.png) no-repeat -312px -156px;
+  content: ' ';
+  width: 67%;
+  height: 100%;
+  float: right; }
+
+.github {
+  background: url(../../img/sprite.png) no-repeat -311px -240px;
+  content: ' ';
+  width: 67%;
+  height: 100%;
+  float: right; }
+
+.linkedin {
+  background: url(../../img/sprite.png) no-repeat -227px -156px;
+  content: ' ';
+  width: 67%;
+  height: 100%;
+  float: right; }
+
+nav {
+  height: 390px; }
+  nav .small {
+    width: 100%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box; }
+    nav .small li {
+      position: relative;
+      width: 254px;
+      height: 182px;
+      display: inline-block;
+      list-style: none;
+      border: 4px solid #fff; }
+      nav .small li:nth-child(2) {
+        margin: 0 0 20px 0; }
+      nav .small li:nth-child(1) {
+        margin: 0 20px 20px 0; }
+      nav .small li:nth-child(3) {
+        margin: 0 20px 0 0; }
+      nav .small li a div {
+        display: block;
+        width: 100%;
+        height: 70%;
+        text-align: center; }
+        nav .small li a div img {
+          content: ' ';
+          width: 100px;
+          height: 82px; }
+        nav .small li a div .home {
+          width: 100px;
+          height: 82px;
+          background: url(../../img/sprite.png) no-repeat 0px 0px; }
+        nav .small li a div .portfolio {
+          background: url(../../img/sprite.png) no-repeat -312px -156px; }
+        nav .small li a div .media {
+          background: url(../../img/sprite.png) no-repeat -312px -156px; }
+        nav .small li a div .contact {
+          background: url(../../img/sprite.png) no-repeat -312px -156px; }
+      nav .small li a p {
+        position: relative;
+        bottom: 0px;
+        left: 7px;
+        margin-top: 30px;
+        text-transform: uppercase; }
+  nav .second {
+    height: 100%; }
+    nav .second .big {
+      width: 100%;
+      height: 100%;
+      border: 4px solid #fff; }
+
+/**************VIDEOOO***************/
+#video-viewport {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; }
+
+video {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.fullsize-video-bg {
+  height: 100%;
+  overflow: hidden; }
+
+.fullsize-video-bg:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; }
+
+.fullsize-video-bg:after {
+  content: "";
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpiZGBg8AVihv///28G0UwMaIARKIMigKECIMAASJsHAYcd2RAAAAAASUVORK5CYII=) repeat;
+  background-size: 2px 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+
+.fullsize-video-bg .inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.63); }
+
+.fullsize-video-bg .inner > div {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 2em; }
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 5em;
+  line-height: .9;
+  font-weight: 900;
+  letter-spacing: -.025em;
+  text-transform: uppercase;
+  margin-bottom: .5em; }
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em; }
+
+div.continue {
+  width: 250px;
+  height: 56px;
+  margin-top: 40px;
+  border: 4px solid #fff;
+  line-height: 56px;
+  font-size: 2em;
+  display: inline-block;
+  transition: All 0.5s; }
+  div.continue:hover {
+    background-color: #790000;
+    border: 4px solid #790000;
+    transition: All 0.5s;
+    color: #fff; }
+
+/*LANDING PAGE EFFECT*/
+@media screen and (max-width: 600px), screen and (max-height: 600px) {
+  nav ul {
+    font-size: .75em; }
+
+  nav ul a {
+    padding: 10px; } }
+.menu-close {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  right: 100%;
+  width: 200px;
+  height: 200px;
+  background: #650000;
+  cursor: pointer;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  -ms-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s;
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -ms-transform-origin: top right;
+  -o-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.menu-close .menu-icon {
+  right: 15px;
+  left: auto;
+  top: 68px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.menu-close .bar {
+  background: #fafafa;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -ms-transform-origin: center;
+  -o-transform-origin: center;
+  transform-origin: center; }
+
+.menu-close .bar:first-child {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.menu-close .bar:last-child {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,10 @@
-@import "compass/css3";
+$color1 : #790000;
+$color2 : #6a0404;
 
 /**************************** Global ********************************/
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Dosis:200,600);
+
+
 html{ 
     min-height:100%;
 }
@@ -35,7 +39,9 @@ a:hover{
 	position: absolute;
 	 -webkit-transform-style: preserve-3d;
 }
-
+.container16{
+    
+}
 
 /******* pagination ********/
 
@@ -61,10 +67,10 @@ a:hover{
   display: block;
   background: #fafafa;
 
-  border-radius: 0px;
+  /*border-radius: 0px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
+  -ms-border-radius: 10px;*/
 
   -webkit-transition:all 0.2s ease;
   -moz-transition:all 0.2s ease;
@@ -81,9 +87,7 @@ a:hover{
   background: none;
   border-radius: 10px;
   border: 1px solid white;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-transition:all 0.5s ease ;
+ 
 }
 
 
@@ -93,14 +97,12 @@ a:hover{
 .menu-outer:hover ~ .menu-close {
   margin-right:-100px;
 }
-.menu-outer:hover .bar { background:rgba(100,200,240,.9); }
+.menu-outer:hover .bar { background:rgba(0, 0, 0, 0.9); }
 .menu-outer > nav ul { top:15%; }
 
 /* The rest I chnaged parts but not most of it */
 
-html, body {
-  background: rgba(20,20,20,1);
-}
+
 
 .menu-outer {
   overflow: hidden;
@@ -112,7 +114,7 @@ html, body {
   left: 100%;
   margin-left: -100px;
   height: 200%;
-  background: rgba(100,200,240,.9);  
+  background: rgba(21, 21, 21, 0.9);  
   -webkit-transition: all ease .5s;
   -moz-transition: all ease .5s;
   -ms-transition: all ease .5s;
@@ -130,7 +132,7 @@ html, body {
   transform: rotate(-45deg);
 }
 .menu-outer:hover {
-  background: rgba(100,200,240,.98);
+  background: rgba(20, 21, 21, 0.98);
   left: 0;
   margin-left: 0;
   -webkit-transform: rotate(0deg);
@@ -171,44 +173,262 @@ html, body {
 .menu-outer:hover > .menu-icon {
   opacity: 0;
 }
-nav ul {
-  position:absolute;
-  width:100%;
-  padding: 0;
-  left: 10%;; /*prevents possible click when not oppened*/
-  -webkit-transition: all ease .5s;
-  -moz-transition: all ease .5s;
-  -ms-transition: all ease .5s;
-  -o-transition: all ease .5s;
-  transition: all ease .5s;
+
+header{
+    margin: 170px auto;
+    width: 1140px;
+    height: 470px;
 }
-.menu-outer:hover > nav ul {
-  left: 0;
+.logoBar{
+    width: 100%;
+    height: 80px;
 }
-nav li {
-  list-style:none;
-  text-align: center;
-  text-transform: uppercase;
+
+.logo{
+    
+    
+    height: 100%;
+    background: url(../../img/sprite.png) no-repeat 0px -329px;
+    float: left;
+        
 }
-nav li a {
-  font-size: 2em;
-  color: rgba(255,255,255,.8);
-  text-decoration: none;
-  margin: 0 auto;
-  padding: 20px;
-  display:block;
-  -webkit-transition: all ease .5s;
-  -moz-transition: all ease .5s;
-  -ms-transition: all ease .5s;
-  -o-transition: all ease .5s;
-  transition: all ease .5s;
+
+ul.social {
+    height: 100%;
+    
 }
-nav li a:hover {
-  color: rgba(255,255,255,1);
+
+ul.social li {
+    display: inline-block;
+    width: 24%;
+    height: 100%;
+   
+    
 }
+
+
+.facebook{
+        background: url(../../img/sprite.png) no-repeat -229px -240px;
+        content: ' ';
+        width: 67%;
+        height: 100%;
+        float: right;
+    }
+.twitter{
+         background: url(../../img/sprite.png) no-repeat -312px -156px;
+        content: ' ';
+        width: 67%;
+        height: 100%;
+        float: right;
+}
+.github{
+        background: url(../../img/sprite.png) no-repeat -311px -240px;
+        content: ' ';
+        width: 67%;
+        height: 100%;
+        float: right;
+}
+.linkedin{
+        background: url(../../img/sprite.png) no-repeat -227px -156px;
+        content: ' ';
+        width: 67%;
+        height: 100%;
+        float: right;
+}
+
+nav{
+    height: 390px;
+    
+    .small{
+    width: 100%;
+    height: 100%;
+    float: left;
+    
+    box-sizing: border-box;
+        li{
+            position: relative;
+            width: 254px;
+            height: 182px;
+            display: inline-block;
+            list-style: none;
+            border: 4px solid #fff;
+            
+            &:nth-child(2){
+              margin: 0 0 20px 0;
+            }
+            
+            &:nth-child(1), {
+                margin: 0 20px 20px 0;
+            }
+            
+            &:nth-child(3){
+                margin: 0 20px 0 0;
+            }
+            
+            a div{
+                display: block;
+                width: 100%;
+                height: 70%;
+                text-align: center;
+                img{
+                    content: ' ';
+                    width: 100px;
+                    height: 82px;
+                    
+                }
+                .home{width: 100px;
+                    height: 82px;
+                    background: url(../../img/sprite.png) no-repeat 0px 0px;
+                }
+                .portfolio{
+                    background: url(../../img/sprite.png) no-repeat -312px -156px;
+                    
+                }
+                .media{
+                    background: url(../../img/sprite.png) no-repeat -312px -156px;
+                }
+                .contact{
+                    background: url(../../img/sprite.png) no-repeat -312px -156px;
+                }
+            }
+            a p{
+                position: relative;
+                bottom: 0px;
+                left: 7px;
+                margin-top: 30px;
+                text-transform: uppercase
+            }
+        }
+    }
+    .second{
+        height: 100%;
+    .big{
+        width: 100%;
+        height: 100%;
+        border: 4px solid #fff;
+    }
+    }
+}
+
+
+
+
+/**************VIDEOOO***************/
+
+
+#video-viewport { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    z-index: -1; 
+}
+video { 
+    display: block;
+    width: 100%; 
+    height: auto; }
+
+.fullsize-video-bg { 
+    height: 100%; 
+    overflow: hidden;
+}
+
+.fullsize-video-bg:before { 
+    content: ""; 
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    z-index: 0; 
+}
+.fullsize-video-bg:after { 
+    content: ""; 
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpiZGBg8AVihv///28G0UwMaIARKIMigKECIMAASJsHAYcd2RAAAAAASUVORK5CYII=) repeat; 
+    background-size: 2px 2px; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; z-index: 1; }
+
+
+.fullsize-video-bg .inner { 
+    display: table; 
+    width: 100%; 
+    height: 100%; 
+    margin: 0 auto; 
+    padding: 0; 
+    position: relative; 
+    z-index: 2; 
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.63); 
+}
+.fullsize-video-bg .inner > div { 
+    text-align: center; 
+    display: table-cell; 
+    vertical-align: middle; 
+    padding: 0 2em; 
+}
+
+
+h1 { font-family: "Raleway", sans-serif; 
+    font-size: 5em; 
+    line-height: .9;
+    font-weight: 900; 
+    letter-spacing: -.025em; 
+    text-transform: uppercase; 
+    margin-bottom: .5em; 
+}
+p { 
+    font-family: "Raleway", sans-serif; 
+    font-size: 1.5em;  
+}
+
+div.continue{
+    width: 250px;
+    height: 56px;
+    margin-top: 40px;
+    border: 4px solid #fff;
+    line-height: 56px;
+    font-size: 2em;
+    display: inline-block;
+    transition: All 0.5s;
+    
+    
+    &:hover{
+        background-color: $color1;
+        border: 4px solid $color1;
+        transition: All 0.5s;
+        color: #fff;
+    }
+}
+
+
+
+
+/*LANDING PAGE EFFECT*/
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 600px), screen and (max-height: 600px) {
-  nav ul {font-size:.75em;}
-  nav ul a {padding: 10px;}
+  nav ul {
+      font-size:.75em;
+  }
+  nav ul a {
+      padding: 10px;
+  }
 }
 .menu-close {
   z-index: 9999;
@@ -217,7 +437,7 @@ nav li a:hover {
   right: 100%;
   width: 200px;
   height: 200px;
-  background: rgba(250,130,70,1);
+  background: rgb(101, 0, 0);
   cursor: pointer;
   -webkit-transition: all ease .5s;
   -moz-transition: all ease .5s;
@@ -268,5 +488,14 @@ nav li a:hover {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+
+
+
+
+
+
+
+
+
 
 

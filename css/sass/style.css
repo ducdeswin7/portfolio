@@ -1,9 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Dosis:200,600);
 /**************************** Global ********************************/
-/* line 4, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 8, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 html {
   min-height: 100%; }
 
-/* line 8, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 12, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 body {
   /* This image will be displayed fullscreen */
   background: black;
@@ -17,19 +18,19 @@ body {
   font-size: 12px;
   color: white; }
 
-/* line 21, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 25, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 a {
   text-decoration: none;
   color: white; }
 
-/* line 22, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 26, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 a:hover {
   cursor: pointer;
   text-decoration: none; }
 
 /**************************** Global ********************************/
 /******** Page ************/
-/* line 31, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 35, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 .wrap {
   width: 100%;
   height: 100%;
@@ -38,7 +39,7 @@ a:hover {
   -webkit-transform-style: preserve-3d; }
 
 /******* pagination ********/
-/* line 43, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 49, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 .pagination {
   position: absolute;
   right: 10px;
@@ -48,29 +49,29 @@ a:hover {
   margin: 0;
   padding: 0; }
 
-/* line 52, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 58, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 .pagination li {
   padding: 5px;
   width: 16px;
   height: 16px; }
 
-/* line 57, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 63, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 .pagination li a {
   margin: 0 auto;
   width: 10px;
   height: 10px;
   display: block;
   background: #fafafa;
-  border-radius: 0px;
+  /*border-radius: 0px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
+  -ms-border-radius: 10px;*/
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -ms-transition: all 0.2s ease;
   box-shadow: 0 0 4px white; }
 
-/* line 76, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 82, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 .pagination li a:hover, .pagination li a.active {
   margin: 0 auto;
   width: 10px;
@@ -78,31 +79,24 @@ a:hover {
   display: block;
   background: none;
   border-radius: 10px;
-  border: 1px solid white;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-transition: all 0.5s ease; }
+  border: 1px solid white; }
 
 /***************HEADER********************/
 /* Stuff I added */
-/* line 93, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 97, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 .menu-outer:hover ~ .menu-close {
   margin-right: -100px; }
 
-/* line 96, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 100, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 .menu-outer:hover .bar {
-  background: rgba(100, 200, 240, 0.9); }
+  background: rgba(0, 0, 0, 0.9); }
 
-/* line 97, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 101, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 .menu-outer > nav ul {
   top: 15%; }
 
 /* The rest I chnaged parts but not most of it */
-/* line 101, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
-html, body {
-  background: #141414; }
-
-/* line 105, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 107, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 .menu-outer {
   overflow: hidden;
   position: fixed;
@@ -113,7 +107,7 @@ html, body {
   left: 100%;
   margin-left: -100px;
   height: 200%;
-  background: rgba(100, 200, 240, 0.9);
+  background: rgba(21, 21, 21, 0.9);
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
   -ms-transition: all ease 0.5s;
@@ -130,9 +124,9 @@ html, body {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 
-/* line 132, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 134, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 .menu-outer:hover {
-  background: rgba(100, 200, 240, 0.98);
+  background: rgba(20, 21, 21, 0.98);
   left: 0;
   margin-left: 0;
   -webkit-transform: rotate(0deg);
@@ -141,7 +135,7 @@ html, body {
   -o-transform: rotate(0deg);
   transform: rotate(0deg); }
 
-/* line 142, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 144, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 .menu-icon {
   z-index: 999;
   position: absolute;
@@ -160,7 +154,7 @@ html, body {
   -o-transition: all ease 0.5s;
   transition: all ease 0.5s; }
 
-/* line 160, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 162, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 .menu-icon .bar {
   background: #fafafa;
   width: 100%;
@@ -172,62 +166,243 @@ html, body {
   -o-transition: all ease 0.5s;
   transition: all ease 0.5s; }
 
-/* line 171, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 173, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 .menu-outer:hover > .menu-icon {
   opacity: 0; }
 
-/* line 174, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
-nav ul {
-  position: absolute;
+/* line 177, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+header {
+  margin: 170px auto;
+  width: 1140px;
+  height: 470px; }
+
+/* line 182, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+.logoBar {
   width: 100%;
-  padding: 0;
-  left: 10%;
-  /*prevents possible click when not oppened*/
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  -ms-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-  transition: all ease 0.5s; }
+  height: 80px; }
 
-/* line 185, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
-.menu-outer:hover > nav ul {
-  left: 0; }
+/* line 187, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+.logo {
+  height: 100%;
+  background: url(../../img/sprite.png) no-repeat 0px -329px;
+  float: left; }
 
-/* line 188, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
-nav li {
-  list-style: none;
-  text-align: center;
-  text-transform: uppercase; }
+/* line 196, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+ul.social {
+  height: 100%; }
 
-/* line 193, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
-nav li a {
-  font-size: 2em;
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  margin: 0 auto;
-  padding: 20px;
+/* line 201, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+ul.social li {
+  display: inline-block;
+  width: 24%;
+  height: 100%; }
+
+/* line 210, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+.facebook {
+  background: url(../../img/sprite.png) no-repeat -229px -240px;
+  content: ' ';
+  width: 67%;
+  height: 100%;
+  float: right; }
+
+/* line 217, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+.twitter {
+  background: url(../../img/sprite.png) no-repeat -312px -156px;
+  content: ' ';
+  width: 67%;
+  height: 100%;
+  float: right; }
+
+/* line 224, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+.github {
+  background: url(../../img/sprite.png) no-repeat -311px -240px;
+  content: ' ';
+  width: 67%;
+  height: 100%;
+  float: right; }
+
+/* line 231, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+.linkedin {
+  background: url(../../img/sprite.png) no-repeat -227px -156px;
+  content: ' ';
+  width: 67%;
+  height: 100%;
+  float: right; }
+
+/* line 239, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+nav {
+  height: 390px; }
+  /* line 242, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+  nav .small {
+    width: 100%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box; }
+    /* line 248, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+    nav .small li {
+      position: relative;
+      width: 254px;
+      height: 182px;
+      display: inline-block;
+      list-style: none;
+      border: 4px solid #fff; }
+      /* line 256, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+      nav .small li:nth-child(2) {
+        margin: 0 0 20px 0; }
+      /* line 260, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+      nav .small li:nth-child(1) {
+        margin: 0 20px 20px 0; }
+      /* line 264, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+      nav .small li:nth-child(3) {
+        margin: 0 20px 0 0; }
+      /* line 268, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+      nav .small li a div {
+        display: block;
+        width: 100%;
+        height: 70%;
+        text-align: center; }
+        /* line 273, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+        nav .small li a div img {
+          content: ' ';
+          width: 100px;
+          height: 82px; }
+        /* line 279, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+        nav .small li a div .home {
+          width: 100px;
+          height: 82px;
+          background: url(../../img/sprite.png) no-repeat 0px 0px; }
+        /* line 283, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+        nav .small li a div .portfolio {
+          background: url(../../img/sprite.png) no-repeat -312px -156px; }
+        /* line 287, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+        nav .small li a div .media {
+          background: url(../../img/sprite.png) no-repeat -312px -156px; }
+        /* line 290, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+        nav .small li a div .contact {
+          background: url(../../img/sprite.png) no-repeat -312px -156px; }
+      /* line 294, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+      nav .small li a p {
+        position: relative;
+        bottom: 0px;
+        left: 7px;
+        margin-top: 30px;
+        text-transform: uppercase; }
+  /* line 303, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+  nav .second {
+    height: 100%; }
+    /* line 305, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+    nav .second .big {
+      width: 100%;
+      height: 100%;
+      border: 4px solid #fff; }
+
+/**************VIDEOOO***************/
+/* line 319, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+#video-viewport {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; }
+
+/* line 328, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+video {
   display: block;
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  -ms-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-  transition: all ease 0.5s; }
+  width: 100%;
+  height: auto; }
 
-/* line 206, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
-nav li a:hover {
-  color: white; }
+/* line 333, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+.fullsize-video-bg {
+  height: 100%;
+  overflow: hidden; }
 
+/* line 338, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+.fullsize-video-bg:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; }
+
+/* line 348, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+.fullsize-video-bg:after {
+  content: "";
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpiZGBg8AVihv///28G0UwMaIARKIMigKECIMAASJsHAYcd2RAAAAAASUVORK5CYII=) repeat;
+  background-size: 2px 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+
+/* line 359, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+.fullsize-video-bg .inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.63); }
+
+/* line 369, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+.fullsize-video-bg .inner > div {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 2em; }
+
+/* line 377, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 5em;
+  line-height: 0.9;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+  margin-bottom: 0.5em; }
+
+/* line 385, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em; }
+
+/* line 390, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+div.continue {
+  width: 250px;
+  height: 56px;
+  margin-top: 40px;
+  border: 4px solid #fff;
+  line-height: 56px;
+  font-size: 2em;
+  display: inline-block;
+  transition: All 0.5s; }
+  /* line 401, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
+  div.continue:hover {
+    background-color: #790000;
+    border: 4px solid #790000;
+    transition: All 0.5s;
+    color: #fff; }
+
+/*LANDING PAGE EFFECT*/
 @media screen and (max-width: 600px), screen and (max-height: 600px) {
-  /* line 210, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+  /* line 426, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
   nav ul {
     font-size: 0.75em; }
 
-  /* line 211, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+  /* line 429, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
   nav ul a {
     padding: 10px; }
  }
 
-/* line 213, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 433, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 .menu-close {
   z-index: 9999;
   position: fixed;
@@ -235,7 +410,7 @@ nav li a:hover {
   right: 100%;
   width: 200px;
   height: 200px;
-  background: #fa8246;
+  background: #650000;
   cursor: pointer;
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
@@ -253,7 +428,7 @@ nav li a:hover {
   -o-transform: rotate(45deg);
   transform: rotate(45deg); }
 
-/* line 238, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 458, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 .menu-close .menu-icon {
   right: 15px;
   left: auto;
@@ -264,7 +439,7 @@ nav li a:hover {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 
-/* line 246, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 466, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 .menu-close .bar {
   background: #fafafa;
   width: 100%;
@@ -276,7 +451,7 @@ nav li a:hover {
   -o-transform-origin: center;
   transform-origin: center; }
 
-/* line 257, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 477, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 .menu-close .bar:first-child {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -284,7 +459,7 @@ nav li a:hover {
   -o-transform: rotate(45deg);
   transform: rotate(45deg); }
 
-/* line 264, C:/wamp/www/SOURCE/exercice perso/html+css+js/Portfolio project/code/css/sass/style.scss */
+/* line 484, C:/wamp/www/SOURCE/github/portfolio/css/sass/style.scss */
 .menu-close .bar:last-child {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);

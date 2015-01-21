@@ -2,43 +2,107 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>jQuery HSlider Plugin Demo</title>
+<title>Boevi LAWSON</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" />
 <link rel="stylesheet" type="text/css" href="css/reset.css">
-<link rel="stylesheet" type="text/css" href="css/960.css">
+<link rel="stylesheet" type="text/css" href="css/1140.css">
+<link rel="stylesheet" href="css/animate.css">
+
 <link rel="stylesheet" type="text/css" href="css/css/style.css">
 
+    <style>  [data-sr]{ visibility: hidden; } </style>
+    
 </head>
 <body>
 
-<div class="wrap">
-    <header>
+<div class="wrap container16">
+    
          <div class="menu-outer">
             <div class="menu-icon">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
-            <nav>
-                <ul>
-                   <li><a href="#">Articles</a></li>
-                   <li><a href="#">Projects</a></li>
-                   <li><a href="#">About</a></li> 
-                    <li><a href="#">Contact</a></li>
-               </ul>
-           </nav>
-        </div>
+        <div class="">
+            <header>
+                  <div class="logoBar row">
+                   
+                        <div class="logo column6 ">
+                            <img src="" alt="">
+                        </div>
+                      
+                      
+                            <ul class="social column6 prefix4">
+                                <li><a href="" class="facebook"></a></li>
+                                <li><a href="" class="twitter"></a></li>
+                                <li><a href="" class="github"></a></li>
+                                <li><a href="" class="linkedin"></a></li>
+                            </ul>
+                      
+                 </div>   
+                    <nav class="row">
+                        <div class="column8">
+                            <ul class="small">
+                                <li><a href="#">
+                                    <div class="icon"><img src="" class="home" alt=""></div><p>Home</p>
+                                    </a></li>
+                                <li><a href="#">
+                                    <div class="icon"><img src="" class="portfolio" alt=""></div><p>Portfolio</p>
+                                    </a></li>
+                                <li><a href="#">
+                                    <div class="icon"><img src="" class="media" alt=""></div><p>Media</p>
+                                    </a></li>
+                                <li><a href="#">
+                                    <div class="icon"><img src="" class="contact" alt=""></div><p>Contact</p>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="column8 second">
+                            <a href="">
+                                <div class="big"></div>
+                            </a>
+                        </div>
+                    </nav>
+                    
+             </header>    
+            </div>    
+        </div>    
+                
+           
+       
         <a class="menu-close" onClick="return true">
             <div class="menu-icon">
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
         </a>
-    </header>
+   
+
+    
+    
+    
   <div class="slider">
-    <section>
-      
+   
+    <section class="fullsize-video-bg">
+         <div class="inner">
+          
+            <div>
+                
+                <h1>Welcome on my website</h1>
+                <p>Let me show you something fun and let we work together</p>  
+                <div class="continue animate-plus" data-animations="tada, fadeOutRight" data-animation-repeat="true" data-animation-duration="3s,5s">Scroll to continue</div>
+            </div>
+            
+
+	     </div>
+	        <div id="video-viewport">
+                <video width="640" height="360" autoplay muted loop>
+                    <source src="video/ocean.mp4" type="video/mp4" />
+                    <source src="video/ocean.ogv" type="video/ogg" />
+                    <source src="video/ocean.webm" type="video/webm" />
+		        </video>
+	    </div>
       </section>
     <section>
      
@@ -60,11 +124,20 @@
 <!--JAVASCRIPT-->
 
 
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.HSlider.js"></script>
+<script src='js/css3-animate-it.js'></script>
 <script type="text/javascript" src="js/js.js"></script>
+<script src="js/scrollReveal.js"></script>
+<script type="text/javascript" src="js/animate-plus.js"></script>
 
+		<script>
+            
+             window.sr = new scrollReveal();
+            
+			
+		</script>
 
 
 </body>
